@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--Pale-blue);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-y: -20vh;
+}
+/* Start Design */
+main {
+  background-color: var(--Very-pale-blue);
+  text-align: center;
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+main .container .img img {
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+main .container .info {
+  margin-top: 40px;
+}
+main .container .info h2 {
+  color: var(--Dark-blue);
+}
+main .container .info p {
+  color: var(--Desaturated-blue);
+  padding: 0 20px;
+}
+main .container .plans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0deg 0% 93.54%);
+  padding: 0 20px 0 30px;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+main .container .plans .text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  position: relative;
+}
+main .container .plans img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  right: 10px;
+}
+main .container .plans .text h4 {
+}
+main .container .plans .text p {
+  position: absolute;
+  left: 30%;
+  bottom: -2px;
+  color: var(--Desaturated-blue);
+}
+main .container .plans a {
+  color: var(--Bright-blue);
+  font-weight: bold;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+main .container .plans a:hover {
+  text-decoration: none;
+  color: hsl(245deg 89.25% 69.23%);
+}
+main .container .ordering {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .container .ordering button {
+  width: 85%;
+  margin: auto;
+  font-weight: bold;
+  border: none;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+main .container .ordering .pay {
+  background-color: var(--Bright-blue);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 5px 0px var(--Bright-blue);
+}
+main .container .ordering .pay:hover {
+  background-color: hsl(245deg 89.25% 69.23%);
+}
+main .container .ordering .cancel {
+  width: 85%;
+  margin: auto;
+  font-weight: bold;
+  border: none;
+  padding: 17px 0;
+  margin-bottom: 30px;
+  color: var(--Desaturated-blue);
+  background-color: white;
+}
+main .container .ordering .cancel:hover {
+  color: black;
+}
+/* End Design */
+@media (max-width: 440px) {
+  main {
+    width: 340px;
+  }
+}
